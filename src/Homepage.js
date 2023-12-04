@@ -4,7 +4,7 @@ function Homepage() {
   const [formData, setFormData] = useState({
     email: '',
     contactNumber: '',
-    ticketType: 'concert', // Default ticket type
+    ticketType: '', // No default ticket type initially
   });
 
   const handleInputChange = (event) => {
@@ -55,15 +55,17 @@ function Homepage() {
             name="ticketType"
             value={formData.ticketType}
             onChange={handleInputChange}
+            required // Make the field required
           >
+            <option value="">Select an option</option> {/* Default option */}
             <option value="concert">Concert</option>
             <option value="sports">Sports</option>
             <option value="theatre">Theatre Performance</option>
-            
+            {/* Add more options as needed */}
           </select>
         </label>
         <br />
-        <button type="submit">Purchase Ticket</button>
+        <button type="submit">Purchase Tickets</button>
       </form>
     </div>
   );
