@@ -1,11 +1,10 @@
-/* Homepage.css */
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: navy; /* Light gray background */
-    color: #ff7f50; /* Dark text color */
+    background-color: navy;
+    color: #ff7f50;
   }
   
   .container {
@@ -27,6 +26,7 @@ body {
   form {
     display: flex;
     flex-direction: column;
+    margin: 100px;
   }
   
   label {
@@ -48,11 +48,11 @@ body {
   input[type='email'],
   input[type='tel'],
   select {
-    width: calc(100% - 24px); /* Adjust input width */
+    width: calc(100% - 24px);
   }
   
   button {
-    background-color: #ff7f50; /* Orange button */
+    background-color: #ff7f50;
     color: white;
     cursor: pointer;
     font-weight: bold;
